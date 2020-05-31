@@ -1,0 +1,49 @@
+{
+  "test_1": {
+    "title": "Book a Hotel with deposit",
+    "data": [
+      {
+        "checkoutDate": "2020-05-28",
+        "checkinDate": "2020-05-20",
+        "firstname": "Santosh",
+        "lastname": "Marigowda",
+        "totalPrice": "100",
+        "deposit": "true"
+      }
+    ]
+  },
+  "test_2": {
+    "title": "Book a Hotel without deposit",
+    "data": [
+      {
+        "checkoutDate": "2020-05-28",
+        "checkinDate": "2020-05-20",
+        "firstname": "Santosh",
+        "lastname": "Marigowda",
+        "totalPrice": "100",
+        "deposit": "false"
+      }
+    ]
+  },
+  "test_3": {
+    "title": "Book two hotels",
+    "data": [
+      {
+        "checkoutDate": "2020-05-28",
+        "checkinDate": "2020-05-20",
+        "firstname": "Santosh",
+        "lastname": "Marigowda",
+        "totalPrice": "100",
+        "deposit": "false"
+      },
+      {
+        "checkoutDate": "2020-05-28",
+        "checkinDate": "2020-05-20",
+        "firstname": "Santosh",
+        "lastname": "Marigowda",
+        "totalPrice": "100",
+        "deposit": "false"
+      }
+    ]
+  }
+}
