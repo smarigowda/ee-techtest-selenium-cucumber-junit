@@ -1,6 +1,6 @@
 # EE Tech Test Solution
 
-## Approach: BDD Testing
+## Approach: BDD - Behaviour Driven Development
 
 ### Prerequisites
 
