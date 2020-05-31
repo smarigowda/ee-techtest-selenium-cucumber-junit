@@ -1,9 +1,11 @@
-### Manual Test Report
+# Manual Test Report
 
 Hello Tester,
 
 I have conducted the manual/ exploratory testing for the app with following test cases.
 I have given the steps I followed for most of the cases.
+
+## Test Cases
 
 1. User should be able to book a hotel `with` deposit - PASS
 2. User should be able to book `more than one hotels` with deposit - PASS
@@ -12,6 +14,8 @@ I have given the steps I followed for most of the cases.
 5. User should be able to delete bookings - PASS
 6. User should not be able to book if any one of the detail is missing - PASS
 7. User should not be able to book if the Price is less than or equal to 0 - FAILED
+
+## Instructions
 
 **Test ID: 1**
 Test Title:  
