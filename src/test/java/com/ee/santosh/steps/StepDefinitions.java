@@ -44,16 +44,15 @@ public class StepDefinitions {
         homePage.open(url);
     }
 
-    @When("^User provides all the details with deposit \"([^\"]*)\"$")
-    public void user_provides_all_the_details_with_deposit(String deposit) throws Exception {
-        DataItem dataItem = data.getTest_1().getData().get(0);
+    @When("^User inputs \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\" and \"([^\"]*)\"")
+    public void user_provides_all_the_details_with_deposit(String firstName, String lastName, String totalPrice, String checkoutDate, String checkinDate, String depositPaid) throws Exception {
         homePage
-                .setCheckoutDate(dataItem.getCheckoutDate())
-                .setFirstName(dataItem.getFirstname())
-                .setLastName(dataItem.getLastname())
-                .setTotalPrice(dataItem.getTotalPrice())
-                .setDeposit(deposit)
-                .setCheckinDate(dataItem.getCheckinDate());
+                .setCheckoutDate(checkoutDate)
+                .setFirstName(firstName)
+                .setLastName(lastName)
+                .setTotalPrice(totalPrice)
+                .setDeposit(depositPaid)
+                .setCheckinDate(checkinDate);
     }
 
     @When("^User Saves the booking$")
