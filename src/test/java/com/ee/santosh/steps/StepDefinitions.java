@@ -32,8 +32,6 @@ public class StepDefinitions {
 
     @Given("^User opens the application$")
     public void user_opens_the_application() throws IOException, InterruptedException {
-
-        System.out.println("User Opens the Application");
         data = new Data();
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         String fileData = new String(Files.readAllBytes(Paths.get(jsonDataFile)));
@@ -48,7 +46,6 @@ public class StepDefinitions {
 
     @When("^User provides all the details with deposit true$")
     public void user_provides_all_the_details_with_deposit_true() throws Exception {
-        System.out.println("User provides all the details with deposit true");
         DataItem dataItem = data.getTest_1().getData().get(0);
         homePage
                 .setCheckoutDate(dataItem.getCheckoutDate())
@@ -61,31 +58,26 @@ public class StepDefinitions {
 
     @When("^User Saves the booking$")
     public void user_saves_the_booking() {
-        System.out.println("User Saves the booking");
         homePage.saveBooking();
     }
 
     @Then("^User sees one booking saved successfully$")
     public void user_sees_one_booking_saved_successfully() throws Exception {
-        System.out.println("User sees one booking saved successfully");
         homePage.verifyOrderCountToBe(1);
     }
 
     @Then("^User sees the booking successfully deleted$")
     public void user_sees_the_booking_successfully_deleted() throws Exception {
-        System.out.println("User sees the booking successfully deleted");
         homePage.verifyOrderCountToBe(0);
     }
 
     @Then("^User deletes the booking$")
     public void user_deletes_the_booking() {
-        System.out.println("User deleted the booking");
         homePage.deleteOrder();
     }
 
     @Given("^User Deletes all the bookings$")
     public void user_deletes_all_the_orders() throws InterruptedException {
-        System.out.println("User deletes all the orders");
         homePage.deleteAllOrders();
     }
 
