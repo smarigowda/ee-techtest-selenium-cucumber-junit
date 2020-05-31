@@ -1,11 +1,15 @@
 # EE Tech Test Solution
-## Approach BDD Testing
+
+## Approach: BDD Testing
 
 ### Prerequisites
 
 - JDK 1.8 should be installed
 - JDK should be available on system path (set JAVA_HOME)
 - Maven. Maven should be installed, it should be available on system path.
+
+### Steps to install the dependencies and run the test
+
 - Clone the github repository
 `git clone git@github.com:smarigowda/ee-techtest-selenium-cucumber-junit.git`
 - Get into the project folder
