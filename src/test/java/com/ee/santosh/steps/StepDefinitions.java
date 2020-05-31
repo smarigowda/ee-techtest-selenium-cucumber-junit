@@ -44,15 +44,15 @@ public class StepDefinitions {
         homePage.open(url);
     }
 
-    @When("^User provides all the details with deposit true$")
-    public void user_provides_all_the_details_with_deposit_true() throws Exception {
+    @When("^User provides all the details with deposit \"([^\"]*)\"$")
+    public void user_provides_all_the_details_with_deposit(String deposit) throws Exception {
         DataItem dataItem = data.getTest_1().getData().get(0);
         homePage
                 .setCheckoutDate(dataItem.getCheckoutDate())
                 .setFirstName(dataItem.getFirstname())
                 .setLastName(dataItem.getLastname())
                 .setTotalPrice(dataItem.getTotalPrice())
-                .setDeposit(dataItem.getDeposit())
+                .setDeposit(deposit)
                 .setCheckinDate(dataItem.getCheckinDate());
     }
 
