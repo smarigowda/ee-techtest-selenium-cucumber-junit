@@ -53,7 +53,7 @@ Steps To Follow:
 Test Title:  
 User should be able to book more than one hotel `without` deposit
 
-1. Follow the steps of Test ID 1, choose Deposit as false and make more than one bookings.
+1. Follow the steps of Test ID 1, choose Deposit as false and make more than one booking.
 2. You should be able to make 2 bookings successfully.
 
 **Test ID: 5**
