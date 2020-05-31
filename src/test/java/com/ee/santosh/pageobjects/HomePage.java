@@ -44,12 +44,13 @@ public class HomePage {
 
     public HomePage deleteAllOrders() throws InterruptedException {
 
+        // Application is taking some time to display the bookings on the screen,
+        // So we have to wait (for some time) until the orders are displayed
+        // and try deleting the orders only if there are any history of bookings.
+
         // Send a request to http://hotel-test.equalexperts.io/booking
         // If the response is an empty array then there are no bookings to be deleted
         // If the response is not an empty array then there are some bookings.
-        //
-        // Application is taking some time to display the bookings on the screen,
-        // Wait until the orders are displayed only if there are any history of bookings.
 
         String response = RestAssured
                 .given()
@@ -58,8 +59,6 @@ public class HomePage {
                 .extract()
                 .response()
                 .asString();
-
-//        String response = "[]";
 
         if(!response.equals("[]")) {
             System.out.println("There are some previous bookings, so wait until the orders are displayed on the home screen");
