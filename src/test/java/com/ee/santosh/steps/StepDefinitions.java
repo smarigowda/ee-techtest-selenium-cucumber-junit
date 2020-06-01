@@ -34,7 +34,7 @@ public class StepDefinitions {
         homePage.open(url);
     }
 
-    @When("^User inputs \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\" and \"([^\"]*)\"")
+    @When("^User inputs (.+) (.+) (.+) (.+) (.+) and (.+)")
     public void user_provides_all_the_details_with_deposit(String firstName, String lastName, String totalPrice, String checkoutDate, String checkinDate, String depositPaid) throws Exception {
         homePage
                 .setCheckoutDate(checkoutDate)

@@ -4,7 +4,7 @@ Feature: Hotel Booking
     And User Deletes all the bookings
 
   Scenario Outline: User successfully books a hotel and also able to delete booking
-    When User inputs "<firstName>" "<lastName>" "<totalPrice>" "<checkoutDate>" "<checkinDate>" and "<depositPaid>"
+    When User inputs <firstName> <lastName> <totalPrice> <checkoutDate> <checkinDate> and <depositPaid>
     And User Saves the booking
     Then User sees one booking saved successfully
     And User deletes the booking
